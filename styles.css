@@ -42,7 +42,7 @@ header {
 .search-dropdown {
     display: none;
     position: absolute;
-    background: white;
+    background: black;
     border: 1px solid #ddd;
     border-radius: 4px;
     list-style: none;
