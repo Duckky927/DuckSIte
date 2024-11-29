@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Sito NapoliGiorgi</title>
+    <title>Sito Di Prova</title>
     <style>
         body {
             background-color: #f0f4f8;
@@ -79,4 +79,4 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#">NapoliGiorgi</
+                <a class="navbar-brand" href="#">Sito Di Prova</
