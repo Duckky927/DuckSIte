@@ -3,75 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>NapoliGiorgi</title>
 </head>
 <body>
-    <header class="bg-success text-white p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img src="images/logo.png" alt="NapoliGiorgi - Logo" class="img-fluid" style="max-width: 150px;">
-            </div>
-            <div class="search-container">
-                <input type="text" placeholder="Cerca..." class="form-control" style="width: 300px;">
-            </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="#Napoli">Napoli</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#SudItalia">SudItalia</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#ITIS">ITIS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#Majorana Giorgi">Majorana Giorgi</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo">NapoliGiorgi</div>
+        <div class="search-container">
+            <input type="text" placeholder="Cerca...">
+            <ul class="search-dropdown">
+                <li><a href="#">Napoli</a></li>
+                <li><a href="#">SudItalia</a></li>
+                <li><a href="#">ITIS</a></li>
+                <li><a href="#">Majorana Giorgi</a></li>
+            </ul>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Chi Siamo</a></li>
+                <li><a href="#">Corsi</a></li>
+                <li><a href="#">Galleria</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container mt-4">
-        <section id="chi-siamo" class="fade-in mb-4">
+    <main>
+        <section class="hero">
+            <h1>Benvenuti a NapoliGiorgi</h1>
+        </section>
+
+        <section class="chi-siamo">
             <h2>Chi Siamo</h2>
-            <p>La nostra scuola fa schifo ma dateci i soldi vi prego.</p>
+            <p>La nostra scuola è un punto di riferimento per l'istruzione a Napoli.</p>
         </section>
 
-        <section id="corsi" class="fade-in mb-4">
+        <section class="corsi">
             <h2>I Nostri Corsi</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Come Rubare</li>
-                <li class="list-group-item">Non Pagare Le Tasse</li>
-                <li class="list-group-item">Vivere a Napoli</li>
-                <li class="list-group-item">Uccidere</li>
-                <li class="list-group-item">Essere Mafiosi</li>
-                <li class="list-group-item">Essere Ricco</li>
-                <li class="list-group-item">Perche Esiste Il Sud Italia</li>
-            </ul>
-        </section>
-
-        <section id="galleria" class="fade-in mb-4">
-            <h2>Galleria</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="images/image1.jpg" alt="PALLE 1" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="images/image2.jpg" alt="PALLE 2" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="images/image3.jpg" alt="PALLE 3" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="images/image4.jpg" alt="PALLE 4" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="images/image5.jpg" alt="PALLE 5" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="images/image6.jpg" alt="PALLE 6" class="img-fluid">
-                </div>
+            <div class="course-list">
+                <div class="course-item">Corso di Coding</div>
+                <div class="course-item">Corso di Design</div>
+                <div class="course-item">Corso di Marketing</div>
+                <div class="course-item">Corso di Fotografia</div>
             </div>
         </section>
 
-        <section id="Per Le Richieste Di Morte" class="fade-in mb-4">
-            <h2>Contatti</h2>
-            <form id="contact-form" action="/submit" method="POST">
-                <div class="form-group">
-                   
+        <section class="galleria">
+            <h2>Galleria</h2>
+            <div class="gallery-grid">
+                <img src="images/image1.jpg" alt="Immagine 1">
+                <img src="images/image2.jpg" alt="Immagine 2">
+                <img src="images/image3.jpg" alt="Immagine 3">
+                <img src="images/image4.jpg" alt="Immagine 4">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 NapoliGiorgi. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
