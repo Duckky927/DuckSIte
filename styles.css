@@ -1,25 +1,165 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #00796b;
-    color: white;
-    padding: 15px 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo img {
-    width:
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.search-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-dropdown li:hover {
+    background: #f0f0f0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+.hero {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.chi-siamo, .corsi, .galleria {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-in;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background: #1abc9c;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    background: #16a085;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
