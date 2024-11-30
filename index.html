@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Di Prova</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Sito Di Prova</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="#gallery">Galleria</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Cerca...">
+    </header>
+
+    <main>
+        <section id="home" class="content">
+            <h2>Benvenuto nel Sito Di Prova</h2>
+            <p>Esplora le nostre funzionalità e scopri di più!</p>
+            <button class="animated-button">Scopri di più</button>
+        </section>
+
+        <section id="about" class="content">
+            <h2>Chi Siamo</h2>
+            <p>Questa è una descrizione della nostra azienda. Siamo qui per fornire il miglior servizio possibile.</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Galleria</h2>
+            <div class="gallery-container">
+                <img src="images/image1.jpg" alt="Immagine 1" class="gallery-item">
+                <img src="images/image2.jpg" alt="Immagine 2" class="gallery-item">
+                <img src="images/image3.jpg" alt="Immagine 3" class="gallery-item">
+                <img src="images/image4.jpg" alt="Immagine 4" class="gallery-item">
+                <img src="images/image5.jpg" alt="Immagine 5" class="gallery-item">
+            </div>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>Contatti</h2>
+            <p>Contattaci per ulteriori informazioni.</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Messaggio" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sito Di Prova. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
