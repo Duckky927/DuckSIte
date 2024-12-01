@@ -121,3 +121,23 @@ form button {
 form button:hover {
     background-color: #218838;
 }
+
+/* Stile per i bottoni viola */
+.purple-button {
+    background-color: #6f42c1; /* Colore viola */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.purple-button:hover {
+    background-color: #5a32a1; /* Colore viola scuro al passaggio del mouse */
+    transform: scale(1.1); /* Ingrandimento al passaggio del mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombra al passaggio del mouse */
+}
+
+/* Contenitore dei bottoni */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spaziatura tra i bottoni */
+    margin-top: 20px;
+}
